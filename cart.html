@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kover.ru</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/roboto-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+
+<body>
+  <header class="header header--menu-open">
+    <div class="header__logo header__logo--is-disabled">
+      <a href="#">
+        <svg width="149" height="50"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
+        <h1 class="visually-hidden" lang="en">Kover.ru</h1>
+      </a>
+    </div>
+    <button type="button" class="header__toggler js-menu-toggler"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li><a href="#catalog">Каталог</a></li>
+        <li><a href="#faq">Вопрос-ответ</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header__cart cart">
+      <a href="#">
+        <svg width="28" height="22"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+        <span class="visually-hidden">Ваша корзина</span>
+        <p class="cart__counter"><span>2</span></p>
+      </a>
+    </div>
+    <ul class="header__contacts">
+      <li><a href="tel:+78002228192">8&nbsp;800&nbsp;222-81-92</a></li>
+      <li><a href="tel:+79261234567">8&nbsp;926&nbsp;123-45-67</a></li>
+    </ul>
+    <ul class="header__social social">
+      <li><a href="#">
+        <svg width="33" height="32"><use xlink:href="img/sprite.svg#icon-whatsapp"></use></svg>
+      </a></li>
+      <li><a href="#">
+        <svg width="32" height="32"><use xlink:href="img/sprite.svg#icon-telegram"></use></svg>
+      </a></li>
+      <li><a href="#">
+        <svg width="34" height="34"><use xlink:href="img/sprite.svg#icon-call"></use></svg>
+      </a></li>
+    </ul>
+  </header>
+  <main class="main  main--cart">
+    <section class="cart">
+      <div class="cart__title-wrap">
+        <h1>Корзина</h1>
+        <p class="cart__empty-cart-message  hidden">
+            <span>В Вашей корзине сейчас нет ни одного ковра. Подобрать можно&nbsp;</span><a href="main.html">тут</a><span>.</span>
+        </p>
+      </div>
+      <div class="cart__order-data">
+        <h3>Ваш заказ</h3>
+        <p>Способы доставки и оплаты можно выбрать при оформлении заказа</p>
+        <table>
+          <caption class="visually-hidden">Детали заказа</caption>
+          <tr>
+            <td>Товары</td>
+            <td class="cart__total-quantity">2</td>
+          </tr>
+          <tr>
+            <td>Общая стоимость</td>
+            <td class="cart__total-sum">48 000&nbsp;&#8381;</td>
+          </tr>
+        </table>
+        <a class="btn" link="#">Перейти к оформлению</a>
+      </div>
+      <ul class="cart__list">
+        <li>
+          <div class="cart__cart-card  cart-card  cart-card--advanced">
+            <div class="cart-card__image-wrap cart-card__image-wrap--advanced">
+              <picture>
+                <source type="image/webp" srcset="img/sierra@1x.webp 1x, img/sierra@2x.webp 2x">
+                <img src="img/sierra@1x.jpg" srcset="img/sierra@2x.jpg 2x" width="115" height="156" alt="Sierra">
+              </picture>
+            </div>
+            <table class="cart-card__data-wrap  cart-card__data-wrap--advanced">
+              <tr>
+                <td><h4 class="cart-card__name  cart-card__name--advanced">Sierra 45611-990</h4></td>
+                <td class="cart-card__price  cart-card__price--advanced">
+                  <span class="cart-card__price-value  cart-card__price-value--advanced">20 000</span>&nbsp;<span class="cart-card__price-currency  cart-card__price-currency--advanced">&#8381;</span>
+                  <div class="cart-card__quantity-control">
+                    <button class="cart-card__quantity-decrease"></button>
+                    <span class="cart-card__quantity-value">1</span>
+                    <button class="cart-card__quantity-increase"></button>
+                  </div>
+                  <button class="cart-card__delete"></button>
+                </td>
+              </tr>
+              <tr>
+                <td class="cart-card__size  cart-card__size--advanced">2&nbsp;&#215;&nbsp;3&nbsp;м</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li>
+          <div class="cart__cart-card  cart-card  cart-card--advanced">
+            <div class="cart-card__image-wrap cart-card__image-wrap--advanced">
+              <picture>
+                <source type="image/webp" srcset="img/elegant-tapestry@1x.webp 1x, img/elegant-tapestry@2x.webp 2x">
+                <img src="img/elegant-tapestry@1x.jpg" srcset="img/elegant-tapestry@2x.jpg 2x" width="115" height="156" alt="Elegant tapestry">
+              </picture>
+            </div>
+            <table class="cart-card__data-wrap  cart-card__data-wrap--advanced">
+              <tr>
+                <td><h4 class="cart-card__name  cart-card__name--advanced">Elegant Tapestry Indian-TUR-FUC</h4></td>
+                <td class="cart-card__price  cart-card__price--advanced">
+                  <span class="cart-card__price-value  cart-card__price-value--advanced">20 000</span>&nbsp;<span class="cart-card__price-currency  cart-card__price-currency--advanced">&#8381;</span>
+                  <div class="cart-card__quantity-control">
+                    <button class="cart-card__quantity-decrease"></button>
+                    <span class="cart-card__quantity-value">1</span>
+                    <button class="cart-card__quantity-increase"></button>
+                  </div>
+                  <button class="cart-card__delete"></button>
+                </td>
+              </tr>
+              <tr>
+                <td class="cart-card__size  cart-card__size--advanced">2&nbsp;&#215;&nbsp;3&nbsp;м</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+        <p class="footer__copyright">&copy;&nbsp;Все права защищены. kover.ru</p>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a class="footer__privacy-policy" href="#">Политика конфиденциальности</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__return" href="#">Возврат</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__delivery-payment" href="#">Доставка и оплата</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__contract" href="#">Договор-оферта</a>
+            </li>
+          </ul>
+        </nav>
+  </footer>
+
+  <script src="js/vendor.min.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+</body>
+</html>

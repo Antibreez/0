@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kover.ru</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/roboto-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+
+<body>
+  <header class="header header--menu-open">
+    <div class="header__logo header__logo--is-disabled">
+      <a href="#" class="js-menu-link">
+        <svg width="149" height="50"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
+        <p class="visually-hidden" lang="en">Kover.ru</p>
+      </a>
+    </div>
+    <button type="button" class="header__toggler js-menu-toggler"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li><a class="js-menu-link" href="#catalog">Каталог</a></li>
+        <li><a class="js-menu-link" href="#faq">Вопрос-ответ</a></li>
+        <li><a class="js-menu-link" href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header__cart cart">
+      <a class="js-menu-link" href="#">
+        <svg width="28" height="22"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+        <span class="visually-hidden">Ваша корзина</span>
+        <p class="cart__counter"><span>2</span></p>
+      </a>
+    </div>
+    <ul class="header__contacts">
+      <li><a class="js-menu-link" href="tel:+78002228192">8&nbsp;800&nbsp;222-81-92</a></li>
+      <li><a class="js-menu-link" href="tel:+79261234567">8&nbsp;926&nbsp;123-45-67</a></li>
+    </ul>
+    <ul class="header__social social">
+      <li><a class="js-menu-link" href="#">
+        <svg width="33" height="32"><use xlink:href="img/sprite.svg#icon-whatsapp"></use></svg>
+      </a></li>
+      <li><a class="js-menu-link" href="#">
+        <svg width="32" height="32"><use xlink:href="img/sprite.svg#icon-telegram"></use></svg>
+      </a></li>
+      <li><a class="js-menu-link" href="#">
+        <svg width="34" height="34"><use xlink:href="img/sprite.svg#icon-call"></use></svg>
+      </a></li>
+    </ul>
+  </header>
+  <main class="main">
+    <div class="main__inner">
+    <section class="cart cart--checkout">
+      <div class="cart__title-wrap"><h1>Оформление заказа</h1></div>
+      <div class="cart__order-data">
+        <h3>Ваш заказ</h3>
+        <table>
+          <caption class="visually-hidden">Детали заказа</caption>
+          <tr>
+            <td>Товары</td>
+            <td class="cart__total-quantity">2</td>
+          </tr>
+          <tr>
+            <td>Доставка</td>
+            <td class="cart__total-quantity">500&nbsp;&#8381;</td>
+          </tr>
+          <tr>
+            <td>Общая стоимость</td>
+            <td class="cart__total-sum">48 000&nbsp;&#8381;</td>
+          </tr>
+        </table>
+        <a class="btn js-checkout-button" link="#" disabled>Оформить заказ</a>
+      </div>
+      <section class="checkout">
+      <h2 class="visually-hidden">Оформение заказа</h2>
+      <form action="#" method="post">
+        <div class="checkout__group">
+          <h3 class="checkout__title">Тип покупателя и&nbsp;регион&nbsp;доставки</h3>
+          <div class="checkout__item checkout__item--halfwidth radio">
+            <label>
+              <input type="radio" name="customer" value="individual" checked>
+              <svg class="radio__box radio__box--off icon-svg" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-check-off"></use>
+              </svg>
+              <svg class="radio__box radio__box--on icon-svg" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-check-on"></use>
+              </svg>
+              Физическое лицо
+            </label>
+          </div>
+          <div class="checkout__item checkout__item--halfwidth radio">
+            <label>
+              <input type="radio" name="customer" value="legal">
+              <svg class="radio__box radio__box--off icon-svg" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-check-off"></use>
+              </svg>
+              <svg class="radio__box radio__box--on icon-svg" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-check-on"></use>
+              </svg>
+              Юридическое лицо
+            </label>
+          </div>
+          <p class="checkout__note checkout__note--border">
+            <svg class="icon-svg" width="40" height="40">
+              <use xlink:href="img/sprite.svg#icon-info"></use>
+            </svg>
+            В данный момент доставку мы осуществляем только по Москве и Московской области.
+          </p>
+        </div>
+        <div class="checkout__group">
+          <h3 class="checkout__title">Способ доставки</h3>
+          <div class="checkout__item radio">
+            <label>
+              <input type="radio" name="delivery" value="courier">
+              <svg class="radio__box radio__box--off icon-svg" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-check-off"></use>
+              </svg>
+              <svg class="radio__box radio__box--on icon-svg" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-check-on"></use>
+              </svg>
+              Доставка курьером
+            </label>
+            <p class="checkout__note">Стоимость доставки 500 ₽. Доставка осуществляется на следующий день после подтверждения заказа менеджером.</p>
+          </div>
+          <div class="checkout__item radio">
+            <label>
+              <input type="radio" name="delivery" value="self">
+              <svg class="radio__box radio__box--off icon-svg" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-check-off"></use>
+              </svg>
+              <svg class="radio__box radio__box--on icon-svg" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-check-on"></use>
+              </svg>
+              Самовывоз
+            </label>
+            <p class="checkout__note">Самовывоз бесплатный. Забрать можно после подтверждения менеджером.</p>
+          </div>
+        </div>
+        <div class="checkout__group">
+          <h3 class="checkout__title">Способ оплаты</h3>
+          <div class="checkout__item checkout__item--halfwidth radio">
+            <label>
+              <input type="radio" name="payment" value="bankcard">
+              <svg class="radio__box radio__box--off icon-svg" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-check-off"></use>
+              </svg>
+              <svg class="radio__box radio__box--on icon-svg" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-check-on"></use>
+              </svg>
+            Банковская карта
+          </label>
+          </div>
+          <div class="checkout__item  radio">
+            <label class="radio__label">
+              <input type="radio" name="payment" value="cash">
+              <svg class="radio__box radio__box--off icon-svg" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-check-off"></use>
+              </svg>
+              <svg class="radio__box radio__box--on icon-svg" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-check-on"></use>
+              </svg>
+            Наличными/картой курьеру
+          </label>
+          </div>
+        </div>
+        <div class="checkout__group">
+          <h3 class="checkout__title checkout__title--note">Получатель</h3>
+          <p class="checkout__note">Все поля обязательны для заполнения.</p>
+          <div class="checkout__item input">
+            <label for="name">Ф. И. О.</label>
+            <input type="text" id="name" name="name">
+            <p class="checkout__error">Укажите, пожалуйста, имя</p>
+          </div>
+          <div class="checkout__item checkout__item--halfwidth input">
+            <label for="tel">Телефон</label>
+            <input type="tel" id="tel" name="tel" pattern="^[ 0-9]+$">
+            <p class="checkout__error">В номере телефона ошибка</p>
+          </div>
+          <div class="checkout__item checkout__item--halfwidth input">
+            <label for="email">Электронная почта</label>
+            <input type="email" id="email" name="email">
+            <p class="checkout__error">В адресе электронной почты ошибка</p>
+          </div>
+          <div class="checkout__item input">
+            <label for="address">Адрес доставки</label>
+            <input type="text" id="address" name="address">
+            <p class="checkout__error">Укажите, пожалуйста, адрес</p>
+          </div>
+          <div class="checkout__item input">
+            <label for="comment">Комментарии к заказу</label>
+            <textarea id="comment" name="comment"></textarea>
+            <p class="checkout__error">Добавьте, пожалуйста, комментарий</p>
+          </div>
+          <div class="checkout__item radio">
+            <label>
+              <input type="checkbox" name="agreement" checked>
+              <svg class="radio__box radio__box--off icon-svg" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-check-off"></use>
+              </svg>
+              <svg class="radio__box radio__box--on icon-svg" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-check-on"></use>
+              </svg>
+              <span>Подтверждая заказ Вы соглашаетесь на
+                <a class="checkout__link" href="#"> обработку персональных данных.</a>
+              </span>
+            </label>
+          </div>
+        </div>
+        <button class="visually-hidden" type="submit">Оформить заказ</button>
+      </form>
+    </section>
+
+    <section class="confirmation hidden">
+      <svg class="confirmation__icon icon-svg" width="50" height="50">
+        <use xlink:href="img/sprite.svg#icon-check-on"></use>
+      </svg>
+      <h2 class="confirmation__title">Заказ оформлен! № <span>12 570</span></h2>
+      <p class="confirmation__text">
+        Спасибо за покупку, в ближайшее время с Вами свяжется наш менеджер по указанному Вами телефону.
+      </p>
+    </section>
+    </section>
+    </div>
+  </main>
+  <footer class="footer">
+        <p class="footer__copyright">&copy;&nbsp;Все права защищены. kover.ru</p>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a class="footer__privacy-policy" href="#">Политика конфиденциальности</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__return" href="#">Возврат</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__delivery-payment" href="#">Доставка и оплата</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__contract" href="#">Договор-оферта</a>
+            </li>
+          </ul>
+        </nav>
+  </footer>
+
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

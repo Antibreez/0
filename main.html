@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kover.ru</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/roboto-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+
+<body>
+  <header class="header header--menu-open">
+    <div class="header__logo header__logo--is-disabled">
+      <a href="#" class="js-menu-link">
+        <svg width="149" height="50"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
+        <p class="visually-hidden" lang="en">Kover.ru</p>
+      </a>
+    </div>
+    <button type="button" class="header__toggler js-menu-toggler"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li><a class="js-menu-link" href="#catalog">Каталог</a></li>
+        <li><a class="js-menu-link" href="#faq">Вопрос-ответ</a></li>
+        <li><a class="js-menu-link" href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header__cart cart">
+      <a class="js-menu-link" href="#">
+        <svg width="28" height="22"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+        <span class="visually-hidden">Ваша корзина</span>
+        <p class="cart__counter"><span>2</span></p>
+      </a>
+    </div>
+    <ul class="header__contacts">
+      <li><a class="js-menu-link" href="tel:+78002228192">8&nbsp;800&nbsp;222-81-92</a></li>
+      <li><a class="js-menu-link" href="tel:+79261234567">8&nbsp;926&nbsp;123-45-67</a></li>
+    </ul>
+    <ul class="header__social social">
+      <li><a class="js-menu-link" href="#">
+        <svg width="33" height="32"><use xlink:href="img/sprite.svg#icon-whatsapp"></use></svg>
+      </a></li>
+      <li><a class="js-menu-link" href="#">
+        <svg width="32" height="32"><use xlink:href="img/sprite.svg#icon-telegram"></use></svg>
+      </a></li>
+      <li><a class="js-menu-link" href="#">
+        <svg width="34" height="34"><use xlink:href="img/sprite.svg#icon-call"></use></svg>
+      </a></li>
+    </ul>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden" lang="en">Kover.ru</h1>
+    <section class="main__slider slider-main">
+      <h2 class="visually-hidden title-gradient">Специальное предложение</h2>
+      <div class="slider-main__slider swiper-container">
+        <div class="slider-main__slider-wrapper swiper-wrapper">
+          <div class="slider-main__slide swiper-slide">
+            <picture>
+              <!-- 1х: 1920px; 2x: 3840px -->
+              <source type="image/webp" srcset="img/slide01.webp, img/slide01@2x.webp 2x">
+              <img src="img/slide01.jpg" srcset="img/slide01@2x.jpg 2x" alt="Sierra" width="1920" height="978">
+            </picture>
+            <div class="slider-main__card">
+              <h3>Sierra</h3>
+              <p>Изысканное изделие для гостиной или спальни. Долговечный, приятный на ощупь, не прихотливый в уборке</p>
+              <p><span>28 000</span>&nbsp;<span>&#8381;</span></p>
+              <button class="btn btn--red" type="button">Купить</button>
+            </div>
+          </div>
+          <div class="slider-main__slide swiper-slide">
+            <picture>
+              <!-- 1х: 1920px; 2x: 3840px -->
+              <source type="image/webp" srcset="img/slide01.webp, img/slide01@2x.webp 2x">
+              <img src="img/slide01.jpg" srcset="img/slide01@2x.jpg 2x" alt="Sierra" width="1920" height="978">
+            </picture>
+            <div class="slider-main__card">
+              <h3>Sierra</h3>
+              <p>Изысканное изделие для гостиной или спальни. Долговечный, приятный на ощупь, не прихотливый в уборке</p>
+              <p><span>28 000</span>&nbsp;<span>&#8381;</span></p>
+              <button class="btn btn--red" type="button">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="main__scroll-down scroll-down">
+      <a class="js-scroll-down" href="#catalog">Листайте вниз<svg width="20" height="30"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg></a>
+    </div>
+    <section class="main__about-us">
+      <h2 class="visually-hidden title-gradient">О нас</h2>
+      <p>Kover.ru – это независимый тематический Интернет-ресурс, созданный московскими экспертами в коврах и декораторами интерьеров. На этом сайте мы подобрали для вас 40 самых популярных бельгийских ковров машинной работы в ценовом диапазоне от 2&nbsp;000&nbsp;&#8381; до 28&nbsp;000&nbsp;&#8381;. Вам остается только выбрать нужный размер, цену и преобрести.</p>
+    </section>
+    <section class="main__catalog catalog" id="catalog">
+      <div class="catalog__wrapper"><h2 class="title-gradient">Каталог</h2></div>
+      <div class="filter catalog__wrapper">
+        <form action="#" method="get">
+          <fieldset>
+            <legend>Размер</legend>
+            <div class="filter__list">
+              <div class="filter__item">
+                <input class="visually-hidden" type="radio" name="size" value="2x3" id="2x3">
+                <label for="2x3">2 &#215; 3 м</label>
+              </div>
+              <div class="filter__item">
+                <input class="visually-hidden" type="radio" name="size" value="1.6x2.3" id="1.6x2.3">
+                <label for="1.6x2.3">1,6 &#215; 2,3 м</label>
+              </div>
+              <div class="filter__item">
+                <input class="visually-hidden" type="radio" name="size" value="0.8x1.5" id="0.8x1.5">
+                <label for="0.8x1.5">0,8 &#215; 1,5 м</label>
+              </div>
+              <div class="filter__item">
+                <input class="visually-hidden" type="radio" name="size" value="0.6x0.9" id="0.6x0.9">
+                <label for="0.6x0.9">0,6 &#215; 0,9 м</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Цена</legend>
+            <div class="filter__list">
+              <div class="filter__item">
+                <input class="visually-hidden" type="radio" name="price" value="2000" id="2000">
+                <label for="2000">2&nbsp;000&nbsp;&#8381;</label>
+              </div>
+              <div class="filter__item">
+                <input class="visually-hidden" type="radio" name="price" value="4500" id="4500">
+                <label for="4500">4&nbsp;500&nbsp;&#8381;</label>
+              </div>
+              <div class="filter__item">
+                <input class="visually-hidden" type="radio" name="price" value="5000" id="5000">
+                <label for="5000">5&nbsp;000&nbsp;&#8381;</label>
+              </div>
+              <div class="filter__item">
+                <input class="visually-hidden" type="radio" name="price" value="7300" id="7300">
+                <label for="7300">7&nbsp;300&nbsp;&#8381;</label>
+              </div>
+              <div class="filter__item">
+                <input class="visually-hidden" type="radio" name="price" value="8600" id="8600" disabled>
+                <label for="8600">8&nbsp;600&nbsp;&#8381;</label>
+              </div>
+              <div class="filter__item">
+                <input class="visually-hidden" type="radio" name="price" value="9000" id="9000">
+                <label for="9000">9&nbsp;000&nbsp;&#8381;</label>
+              </div>
+              <div class="filter__item">
+                <input class="visually-hidden" type="radio" name="price" value="11000" id="11000">
+                <label for="11000">11&nbsp;000&nbsp;&#8381;</label>
+              </div>
+              <div class="filter__item">
+                <input class="visually-hidden" type="radio" name="price" value="18500" id="18500">
+                <label for="18500">18&nbsp;500&nbsp;&#8381;</label>
+              </div>
+              <div class="filter__item">
+                <input class="visually-hidden" type="radio" name="price" value="22000" id="22000">
+                <label for="22000">22&nbsp;000&nbsp;&#8381;</label>
+              </div>
+              <div class="filter__item">
+                <input class="visually-hidden" type="radio" name="price" value="28000" id="28000">
+                <label for="28000">28&nbsp;000&nbsp;&#8381;</label>
+              </div>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+      <div class="catalog__wrapper catalog__wrapper--transparent">
+        <ul class="catalog__list  js--catalog">
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item001.webp, img/item001@2x.webp 2x">
+              <img src="img/item001.jpg" srcset="img/item001@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item002.webp, img/item002@2x.webp 2x">
+              <img src="img/item002.jpg" srcset="img/item002@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item003.webp, img/item003@2x.webp 2x">
+              <img src="img/item003.jpg" srcset="img/item003@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item004.webp, img/item004@2x.webp 2x">
+              <img src="img/item004.jpg" srcset="img/item004@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item005.webp, img/item005@2x.webp 2x">
+              <img src="img/item005.jpg" srcset="img/item005@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item006.webp, img/item006@2x.webp 2x">
+              <img src="img/item006.jpg" srcset="img/item006@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item007.webp, img/item007@2x.webp 2x">
+              <img src="img/item007.jpg" srcset="img/item007@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item008.webp, img/item008@2x.webp 2x">
+              <img src="img/item008.jpg" srcset="img/item008@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item009.webp, img/item009@2x.webp 2x">
+              <img src="img/item009.jpg" srcset="img/item009@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item010.webp, img/item010@2x.webp 2x">
+              <img src="img/item010.jpg" srcset="img/item010@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item011.webp, img/item011@2x.webp 2x">
+              <img src="img/item011.jpg" srcset="img/item011@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item012.webp, img/item012@2x.webp 2x">
+              <img src="img/item012.jpg" srcset="img/item012@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item013.webp, img/item013@2x.webp 2x">
+              <img src="img/item013.jpg" srcset="img/item013@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item014.webp, img/item014@2x.webp 2x">
+              <img src="img/item014.jpg" srcset="img/item014@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item015.webp, img/item015@2x.webp 2x">
+              <img src="img/item015.jpg" srcset="img/item015@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item016.webp, img/item016@2x.webp 2x">
+              <img src="img/item016.jpg" srcset="img/item016@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item017.webp, img/item017@2x.webp 2x">
+              <img src="img/item017.jpg" srcset="img/item017@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item018.webp, img/item018@2x.webp 2x">
+              <img src="img/item018.jpg" srcset="img/item018@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item019.webp, img/item019@2x.webp 2x">
+              <img src="img/item019.jpg" srcset="img/item019@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item020.webp, img/item020@2x.webp 2x">
+              <img src="img/item020.jpg" srcset="img/item020@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item021.webp, img/item021@2x.webp 2x">
+              <img src="img/item021.jpg" srcset="img/item021@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item022.webp, img/item022@2x.webp 2x">
+              <img src="img/item022.jpg" srcset="img/item022@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item023.webp, img/item023@2x.webp 2x">
+              <img src="img/item023.jpg" srcset="img/item023@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item024.webp, img/item024@2x.webp 2x">
+              <img src="img/item024.jpg" srcset="img/item024@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item025.webp, img/item025@2x.webp 2x">
+              <img src="img/item025.jpg" srcset="img/item025@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item026.webp, img/item026@2x.webp 2x">
+              <img src="img/item026.jpg" srcset="img/item026@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item027.webp, img/item027@2x.webp 2x">
+              <img src="img/item027.jpg" srcset="img/item027@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item028.webp, img/item028@2x.webp 2x">
+              <img src="img/item028.jpg" srcset="img/item028@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item029.webp, img/item029@2x.webp 2x">
+              <img src="img/item029.jpg" srcset="img/item029@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item030.webp, img/item030@2x.webp 2x">
+              <img src="img/item030.jpg" srcset="img/item030@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item031.webp, img/item031@2x.webp 2x">
+              <img src="img/item031.jpg" srcset="img/item031@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item032.webp, img/item032@2x.webp 2x">
+              <img src="img/item032.jpg" srcset="img/item032@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item033.webp, img/item033@2x.webp 2x">
+              <img src="img/item033.jpg" srcset="img/item033@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item034.webp, img/item034@2x.webp 2x">
+              <img src="img/item034.jpg" srcset="img/item034@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item035.webp, img/item035@2x.webp 2x">
+              <img src="img/item035.jpg" srcset="img/item035@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item036.webp, img/item036@2x.webp 2x">
+              <img src="img/item036.jpg" srcset="img/item036@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item037.webp, img/item037@2x.webp 2x">
+              <img src="img/item037.jpg" srcset="img/item037@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item038.webp, img/item038@2x.webp 2x">
+              <img src="img/item038.jpg" srcset="img/item038@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item039.webp, img/item039@2x.webp 2x">
+              <img src="img/item039.jpg" srcset="img/item039@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+          <li>
+            <div>
+              <h4>Azzur</h4>
+              <table>
+                <tr>
+                  <td>0,6 &#215; 0,9 м</td>
+                  <td>2&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>0,8 &#215; 1,5 м</td>
+                  <td>7&nbsp;300&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>1,6 &#215; 2,3 м</td>
+                  <td>22&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+                <tr>
+                  <td>2 &#215; 3 м</td>
+                  <td>28&nbsp;000&nbsp;&#8381;</td>
+                </tr>
+              </table>
+              <p><button class="btn  js--to-cart" type="button">В корзину</button>
+                <a class="js--preview"><span class="visually-hidden">Посмотреть подробнее</span><svg width="54" height="45"><use xlink:href="img/sprite.svg#icon-view"></use></svg></a></p>
+            </div>
+            <picture>
+              <!-- 1х: 250px; 2x: 500px -->
+              <source type="image/webp" srcset="img/item040.webp, img/item040@2x.webp 2x">
+              <img src="img/item040.jpg" srcset="img/item040@2x.jpg 2x" alt="Azzur" width="250" height="340">
+            </picture>
+          </li>
+        </ul>
+        <ul class="catalog__pagination">
+          <li><button type="button" class="btn btn--icon js-catalog-pagination-btn">1</button></li>
+          <li><button type="button" class="btn btn--icon js-catalog-pagination-btn">2</button></li>
+          <li><button type="button" class="btn btn--icon js-catalog-pagination-btn">3</button></li>
+        </ul>
+      </div>
+    </section>
+    <section class="main__faq faq" id="faq">
+      <h2 class="title-gradient">Вопрос-ответ</h2>
+      <div class="faq__list swiper-container">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <h3>Чем хороши бельгийские синтетические ковры?</h3>
+            <p>Недорогие, износостойкие, грязеотталкивающие ковры, которые не накапливают статическое электричество. По отзывам наших клиентов, их часто используют для детских комнат, так как они легко чистятся.</p>
+          </li>
+          <li class="swiper-slide">
+            <h3>Чем хороши бельгийские синтетические ковры?</h3>
+            <p>Недорогие, износостойкие, грязеотталкивающие ковры, которые не накапливают статическое электричество. По отзывам наших клиентов, их часто используют для детских комнат, так как они легко чистятся.</p>
+          </li>
+          <li class="swiper-slide">
+            <h3>Чем хороши бельгийские синтетические ковры?</h3>
+            <p>Недорогие, износостойкие, грязеотталкивающие ковры, которые не накапливают статическое электричество. По отзывам наших клиентов, их часто используют для детских комнат, так как они легко чистятся.</p>
+          </li>
+          <li class="swiper-slide">
+            <h3>Чем хороши бельгийские синтетические ковры?</h3>
+            <p>Недорогие, износостойкие, грязеотталкивающие ковры, которые не накапливают статическое электричество. По отзывам наших клиентов, их часто используют для детских комнат, так как они легко чистятся.</p>
+          </li>
+          <li class="swiper-slide">
+            <h3>Чем хороши бельгийские синтетические ковры?</h3>
+            <p>Недорогие, износостойкие, грязеотталкивающие ковры, которые не накапливают статическое электричество. По отзывам наших клиентов, их часто используют для детских комнат, так как они легко чистятся.</p>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="main__contacts contacts" id="contacts">
+      <h2 class="title-gradient">Контакты</h2>
+      <div class="contacts__wrapper">
+        <p class="contacts__legal">ООО&nbsp;«Новый стиль», ИНН:&nbsp;7706426530, ОГРН:&nbsp;1157746846278, 4&#8209;й&nbsp;Добрынинский пер., д.&nbsp;2/10, помещение&nbsp;I, Москва, Россия, 119049</p>
+        <p class="contacts__byu"><a href="mailto:zapros@kover.ru">zapros@kover.ru</a><span>По&nbsp;всем вопросам связанным с&nbsp;покупкой</span></p>
+        <p class="contacts__general"><a href="mailto:info@kover.ru">info@kover.ru</a><span>По&nbsp;остальным вопросам</span></p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+        <p class="footer__copyright">&copy;&nbsp;Все права защищены. kover.ru</p>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a class="footer__privacy-policy" href="#">Политика конфиденциальности</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__return" href="#">Возврат</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__delivery-payment" href="#">Доставка и оплата</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__contract" href="#">Договор-оферта</a>
+            </li>
+          </ul>
+        </nav>
+  </footer>
+  <section class="popup-cart hidden">
+    <div class="popup-cart__overlay"></div>
+    <div class="popup-cart__content">
+      <h2>Товар добавлен в&nbsp;корзину</h2>
+      <div class="popup-cart__cart-card  cart-card">
+        <div class="cart-card__image-wrap">
+          <picture>
+            <source type="image/webp" srcset="img/azzur@1x.webp 1x, img/azzur@2x.webp 2x">
+            <img src="img/azzur@1x.jpg" srcset="img/azzur@2x.jpg 2x" width="115" height="156" alt="Azzur">
+          </picture>
+        </div>
+        <table class="cart-card__data-wrap">
+          <tr>
+            <td><h3 class="cart-card__name">Azzur</h3></td>
+            <td class="cart-card__price"><span class="cart-card__price-value">20 000</span>&nbsp;<span class="cart-card__price-currency">&#8381;</span></td>
+          </tr>
+          <tr>
+            <td class="cart-card__size">2&nbsp;&#215;&nbsp;3&nbsp;м</td>
+          </tr>
+        </table>
+      </div>
+      <button class="popup-cart__to-catalog  btn  btn--negative">Выбрать еще</button>
+      <a class="popup-cart__to-cart  btn" href="#">Перейти в корзину</a>
+    </div>
+    <button class="popup-cart__close"><span>Закрыть</spa></button>
+  </section>
+  <section class="popup-preview hidden">
+    <div class="popup-preview__overlay"></div>
+    <div class="popup-preview__info">
+      <p class="popup-preview__type">Ковер</p>
+      <h2 class="popup-preview__name">Azzur</h2>
+      <p class="popup-preview__description">
+        Ковры из коллекции AZZUR подойдут современному минималистичному интерьеру, не перегруженному лишними деталями. Узоры варьируются от актуальной абстракции до лаконичной и ненавязчивой графики. Главное преимущество коллекции — прохладные мягкие цвета, которые внесут в интерьер ощущение свежести — комната будет выглядеть светлой даже в пасмурный день.
+      </p>
+      <p class="popup-preview__country">Страна производства: Бельгия</p>
+      <p class="popup-preview__material">Материал: Синтетика</p>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Выбрать размер</legend>
+          <ul>
+            <li>
+              <input class="visually-hidden" type="radio" name="size" value="2x3" id="2x3">
+              <label for="2x3">2 &#215; 3 м</label>
+            </li>
+            <li>
+              <input class="visually-hidden" type="radio" name="size" value="1.6x2.3" id="1.6x2.3">
+              <label for="1.6x2.3">1,6 &#215; 2,3 м</label>
+            </li>
+            <li>
+              <input class="visually-hidden" type="radio" name="size" value="0.8x1.5" id="0.8x1.5">
+              <label for="0.8x1.5">0,8 &#215; 1,5 м</label>
+            </li>
+            <li>
+              <input class="visually-hidden" type="radio" name="size" value="0.6x0.9" id="0.6x0.9">
+              <label for="0.6x0.9">0,6 &#215; 0,9 м</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="popup-preview__to-cart  btn">В корзину</button>
+      </form>
+      <p class="popup-preview__price"><span class="popup-preview__value">20 000</span>&nbsp;<span class="popup-preview__currency">&#8381;</span></p>
+    </div>
+    <div class="popup-preview__slider  swiper-container">
+      <div class="popup-preview__wrapper  swiper-wrapper">
+        <div class="popup-preview__slide  swiper-slide">
+          <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/azzur-preview-mobile@1x.webp 1x, img/azzur-preview-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/azzur-preview@1x.webp 1x, img/azzur-preview@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/azzur-preview-mobile@1x.jpeg 1x, img/azzur-preview-mobile@2x.jpeg 2x">
+              <img src="img/azzur-preview@1x.jpg" srcset="img/azzur-preview@2x.jpg 2x" width="1195" height="795" alt="Azzur">
+          </picture>
+        </div>
+        <div class="popup-preview__slide  swiper-slide">
+            <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/azzur-preview-mobile@1x.webp 1x, img/azzur-preview-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/azzur-preview@1x.webp 1x, img/azzur-preview@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/azzur-preview-mobile@1x.jpeg 1x, img/azzur-preview-mobile@2x.jpeg 2x">
+                <img src="img/azzur-preview@1x.jpg" srcset="img/azzur-preview@2x.jpg 2x" width="1195" height="795" alt="Azzur">
+            </picture>
+        </div>
+        <div class="popup-preview__slide  swiper-slide">
+            <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/azzur-preview-mobile@1x.webp 1x, img/azzur-preview-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/azzur-preview@1x.webp 1x, img/azzur-preview@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/azzur-preview-mobile@1x.jpeg 1x, img/azzur-preview-mobile@2x.jpeg 2x">
+                <img src="img/azzur-preview@1x.jpg" srcset="img/azzur-preview@2x.jpg 2x" width="1195" height="795" alt="Azzur">
+            </picture>
+        </div>
+      </div>
+      <div class="popup-preview__pagination  swiper-pagination"></div>
+    </div>
+    <button class="popup-preview__close"><span>Закрыть</span></button>
+    <div class="popup-fullview__slider  swiper-container  hidden">
+      <div class="popup-fullview__wrapper  swiper-wrapper">
+        <div class="popup-fullview__slide  swiper-slide">
+          <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/azzur-preview@1x.webp 1x, img/azzur-preview@2x.webp 2x">
+              <source type="image/webp" srcset="img/azzur-fullview@1x.webp 1x, img/azzur-fullview@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/azzur-preview@1x.jpeg 1x, img/azzur-preview@2x.jpeg 2x">
+              <img src="img/azzur-fullview@1x.jpg" srcset="img/azzur-fullview@2x.jpg 2x" alt="Azzur">
+          </picture>
+        </div>
+        <div class="popup-fullview__slide  swiper-slide">
+            <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/azzur-preview@1x.webp 1x, img/azzur-preview@2x.webp 2x">
+                <source type="image/webp" srcset="img/azzur-fullview@1x.webp 1x, img/azzur-fullview@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/azzur-preview@1x.jpeg 1x, img/azzur-preview@2x.jpeg 2x">
+                <img src="img/azzur-fullview@1x.jpg" srcset="img/azzur-fullview@2x.jpg 2x" alt="Azzur">
+            </picture>
+        </div>
+        <div class="popup-fullview__slide  swiper-slide">
+            <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/azzur-preview@1x.webp 1x, img/azzur-preview@2x.webp 2x">
+                <source type="image/webp" srcset="img/azzur-fullview@1x.webp 1x, img/azzur-fullview@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/azzur-preview@1x.jpeg 1x, img/azzur-preview@2x.jpeg 2x">
+                <img src="img/azzur-fullview@1x.jpg" srcset="img/azzur-fullview@2x.jpg 2x" alt="Azzur">
+            </picture>
+        </div>
+      </div>
+      <div class="popup-fullview__pagination  swiper-pagination"></div>
+      <button class="popup-fullview__close"></button>
+    </div>
+  </section>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

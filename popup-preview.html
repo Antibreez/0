@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kover.ru</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/roboto-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+
+<body>
+  <header class="header header--menu-open">
+    <div class="header__logo header__logo--is-disabled">
+      <a href="#">
+        <svg width="149" height="50"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
+        <h1 class="visually-hidden" lang="en">Kover.ru</h1>
+      </a>
+    </div>
+    <button type="button" class="header__toggler js-menu-toggler"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li><a href="#catalog">Каталог</a></li>
+        <li><a href="#faq">Вопрос-ответ</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header__cart cart">
+      <a href="#">
+        <svg width="28" height="22"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+        <span class="visually-hidden">Ваша корзина</span>
+        <p class="cart__counter"><span>2</span></p>
+      </a>
+    </div>
+    <ul class="header__contacts">
+      <li><a href="tel:+78002228192">8&nbsp;800&nbsp;222-81-92</a></li>
+      <li><a href="tel:+79261234567">8&nbsp;926&nbsp;123-45-67</a></li>
+    </ul>
+    <ul class="header__social social">
+      <li><a href="#">
+        <svg width="33" height="32"><use xlink:href="img/sprite.svg#icon-whatsapp"></use></svg>
+      </a></li>
+      <li><a href="#">
+        <svg width="32" height="32"><use xlink:href="img/sprite.svg#icon-telegram"></use></svg>
+      </a></li>
+      <li><a href="#">
+        <svg width="34" height="34"><use xlink:href="img/sprite.svg#icon-call"></use></svg>
+      </a></li>
+    </ul>
+  </header>
+  <main class="main">
+  </main>
+  <footer class="footer">
+        <p class="footer__copyright">&copy;&nbsp;Все права защищены. kover.ru</p>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a class="footer__privacy-policy" href="#">Политика конфиденциальности</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__return" href="#">Возврат</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__delivery-payment" href="#">Доставка и оплата</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__contract" href="#">Договор-оферта</a>
+            </li>
+          </ul>
+        </nav>
+  </footer>
+  <section class="popup-preview hidden">
+    <div class="popup-preview__overlay"></div>
+    <div class="popup-preview__info">
+      <p class="popup-preview__type">Ковер</p>
+      <h2 class="popup-preview__name">Azzur</h2>
+      <p class="popup-preview__description">
+        Ковры из коллекции AZZUR подойдут современному минималистичному интерьеру, не перегруженному лишними деталями. Узоры варьируются от актуальной абстракции до лаконичной и ненавязчивой графики. Главное преимущество коллекции — прохладные мягкие цвета, которые внесут в интерьер ощущение свежести — комната будет выглядеть светлой даже в пасмурный день.
+      </p>
+      <p class="popup-preview__country">Страна производства: Бельгия</p>
+      <p class="popup-preview__material">Материал: Синтетика</p>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Выбрать размер</legend>
+          <ul>
+            <li>
+              <input class="visually-hidden" type="radio" name="size" value="2x3" id="2x3">
+              <label for="2x3">2 &#215; 3 м</label>
+            </li>
+            <li>
+              <input class="visually-hidden" type="radio" name="size" value="1.6x2.3" id="1.6x2.3">
+              <label for="1.6x2.3">1,6 &#215; 2,3 м</label>
+            </li>
+            <li>
+              <input class="visually-hidden" type="radio" name="size" value="0.8x1.5" id="0.8x1.5">
+              <label for="0.8x1.5">0,8 &#215; 1,5 м</label>
+            </li>
+            <li>
+              <input class="visually-hidden" type="radio" name="size" value="0.6x0.9" id="0.6x0.9">
+              <label for="0.6x0.9">0,6 &#215; 0,9 м</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="popup-preview__to-cart  btn">В корзину</button>
+      </form>
+      <p class="popup-preview__price"><span class="popup-preview__value">20 000</span>&nbsp;<span class="popup-preview__currency">&#8381;</span></p>
+    </div>
+    <div class="popup-preview__slider  swiper-container">
+      <div class="popup-preview__wrapper  swiper-wrapper">
+        <div class="popup-preview__slide  swiper-slide">
+          <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/azzur-preview-mobile@1x.webp 1x, img/azzur-preview-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/azzur-preview@1x.webp 1x, img/azzur-preview@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/azzur-preview-mobile@1x.jpeg 1x, img/azzur-preview-mobile@2x.jpeg 2x">
+              <img src="img/azzur-preview@1x.jpg" srcset="img/azzur-preview@2x.jpg 2x" width="1195" height="795" alt="Azzur">
+          </picture>
+        </div>
+        <div class="popup-preview__slide  swiper-slide">
+            <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/azzur-preview-mobile@1x.webp 1x, img/azzur-preview-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/azzur-preview@1x.webp 1x, img/azzur-preview@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/azzur-preview-mobile@1x.jpeg 1x, img/azzur-preview-mobile@2x.jpeg 2x">
+                <img src="img/azzur-preview@1x.jpg" srcset="img/azzur-preview@2x.jpg 2x" width="1195" height="795" alt="Azzur">
+            </picture>
+        </div>
+        <div class="popup-preview__slide  swiper-slide">
+            <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/azzur-preview-mobile@1x.webp 1x, img/azzur-preview-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/azzur-preview@1x.webp 1x, img/azzur-preview@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/azzur-preview-mobile@1x.jpeg 1x, img/azzur-preview-mobile@2x.jpeg 2x">
+                <img src="img/azzur-preview@1x.jpg" srcset="img/azzur-preview@2x.jpg 2x" width="1195" height="795" alt="Azzur">
+            </picture>
+        </div>
+      </div>
+      <div class="popup-preview__pagination  swiper-pagination"></div>
+    </div>
+    <button class="popup-preview__close"><span>Закрыть</span></button>
+    <div class="popup-fullview__slider  swiper-container  hidden">
+      <div class="popup-fullview__wrapper  swiper-wrapper">
+        <div class="popup-fullview__slide  swiper-slide">
+          <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/azzur-preview@1x.webp 1x, img/azzur-preview@2x.webp 2x">
+              <source type="image/webp" srcset="img/azzur-fullview@1x.webp 1x, img/azzur-fullview@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/azzur-preview@1x.jpeg 1x, img/azzur-preview@2x.jpeg 2x">
+              <img src="img/azzur-fullview@1x.jpg" srcset="img/azzur-fullview@2x.jpg 2x" alt="Azzur">
+          </picture>
+        </div>
+        <div class="popup-fullview__slide  swiper-slide">
+            <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/azzur-preview@1x.webp 1x, img/azzur-preview@2x.webp 2x">
+                <source type="image/webp" srcset="img/azzur-fullview@1x.webp 1x, img/azzur-fullview@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/azzur-preview@1x.jpeg 1x, img/azzur-preview@2x.jpeg 2x">
+                <img src="img/azzur-fullview@1x.jpg" srcset="img/azzur-fullview@2x.jpg 2x" alt="Azzur">
+            </picture>
+        </div>
+        <div class="popup-fullview__slide  swiper-slide">
+            <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/azzur-preview@1x.webp 1x, img/azzur-preview@2x.webp 2x">
+                <source type="image/webp" srcset="img/azzur-fullview@1x.webp 1x, img/azzur-fullview@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/azzur-preview@1x.jpeg 1x, img/azzur-preview@2x.jpeg 2x">
+                <img src="img/azzur-fullview@1x.jpg" srcset="img/azzur-fullview@2x.jpg 2x" alt="Azzur">
+            </picture>
+        </div>
+      </div>
+      <div class="popup-fullview__pagination  swiper-pagination"></div>
+      <button class="popup-fullview__close"></button>
+    </div>
+  </section>
+
+  <script src="js/vendor.min.js"></script>
+  <script>
+    (function () {
+    let initialDirection = getDirection();
+
+    let previewSlider = initPreviewSwiper(initialDirection, `.popup-preview__slider`);
+    let fullSlider = initPreviewSwiper(initialDirection, `.popup-fullview__slider`);
+
+    function getDirection() {
+      return document.body.clientWidth > 767 ? `vertical` : `horizontal`;
+    }
+
+    function initPreviewSwiper(direct, name) {
+      return new Swiper(name, {
+        direction: direct,
+        loop: true,
+        mousewheel: {
+          sensitivity: 100,
+        },
+        pagination: {
+          el: `.swiper-pagination`,
+          clickable: true,
+        },
+      });
+    }
+
+    window.addEventListener(`resize`, function () {
+      if (getDirection() !== initialDirection) {
+        initialDirection = getDirection();
+        previewSlider.destroy(true, true);
+        previewSlider = initPreviewSwiper(initialDirection, `.popup-preview__slider`);
+        fullSlider.destroy(true, true);
+        fullSlider = initPreviewSwiper(initialDirection, `.popup-fullview__slider`);
+      }
+    });
+
+    const body = document.querySelector(`body`);
+    const popup = document.querySelector(`.popup-preview`);
+    const preview = popup.querySelector(`.popup-preview__slider`);
+    const fullView = popup.querySelector(`.popup-fullview__slider`);
+    const itemInfo = popup.querySelector(`.popup-preview__info`);
+    const closePreview = popup.querySelector(`.popup-preview__close`);
+    const closeFullview = popup.querySelector(`.popup-fullview__close`);
+
+    function showElement(element) {
+      element.classList.remove(`hidden`);
+    }
+
+    function hideElement(element) {
+      element.classList.add(`hidden`);
+    }
+
+    function PopupPreview() {
+      this._onPreviewClick = this._onPreviewClick.bind(this);
+      this._onFullviewClick = this._onFullviewClick.bind(this);
+      this._onClosePreviewClick = this._onClosePreviewClick.bind(this);
+      this._onCloseFullviewClick = this._onCloseFullviewClick.bind(this);
+      this._addEventListeners = this._addEventListeners.bind(this);
+    }
+
+    PopupPreview.prototype.open = function () {
+      showElement(popup);
+      body.classList.add(`popup`);
+      previewSlider.destroy(true, true);
+      previewSlider = initPreviewSwiper(initialDirection, `.popup-preview__slider`);
+      this._addEventListeners();
+    };
+
+    PopupPreview.prototype._close = function () {
+      hideElement(popup);
+      body.classList.remove(`popup`);
+      this._removeEventListeners();
+    };
+
+    PopupPreview.prototype._onPreviewClick = function () {
+      hideElement(itemInfo);
+      hideElement(preview);
+      fullSlider.destroy(true, true);
+      fullSlider = initPreviewSwiper(initialDirection, `.popup-fullview__slider`);
+      showElement(fullView);
+    };
+
+    PopupPreview.prototype._onFullviewClick = function () {
+      hideElement(fullView);
+      previewSlider.destroy(true, true);
+      previewSlider = initPreviewSwiper(initialDirection, `.popup-preview__slider`);
+      showElement(preview);
+      showElement(itemInfo);
+    };
+
+    PopupPreview.prototype._onClosePreviewClick = function () {
+      this._close();
+      this._removeEventListeners();
+    };
+
+    PopupPreview.prototype._onCloseFullviewClick = function () {
+      hideElement(fullView);
+      showElement(preview);
+      showElement(itemInfo);
+    };
+
+    PopupPreview.prototype._addEventListeners = function () {
+      preview.addEventListener(`click`, this._onPreviewClick);
+      fullView.addEventListener(`click`, this._onFullviewClick);
+      closePreview.addEventListener(`click`, this._onClosePreviewClick);
+      closeFullview.addEventListener(`click`, this._onCloseFullviewClick);
+      //document.addEventListener(`keydown`, this._onKeyPress);
+    };
+
+    PopupPreview.prototype._removeEventListeners = function () {
+      preview.removeEventListener(`click`, this._onPreviewClick);
+      fullView.removeEventListener(`click`, this._onFullviewClick);
+      closePreview.removeEventListener(`click`, this._onClosePreviewClick);
+      closeFullview.removeEventListener(`click`, this._onCloseFullviewClick);
+      //document.addEventListener(`keydown`, this._onKeyPress);
+    };
+
+    window.PopupPreview = PopupPreview;
+
+    const popupPreview = new PopupPreview();
+    popupPreview.open();
+})(window.PopupCart);
+  </script>
+</body>
+</html>
